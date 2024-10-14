@@ -4,7 +4,7 @@ import './Card.css'
 
 export function Card ({text, className}) {
 
-    const [page, setPage] = useState(1)
+    const [page, setPage] = useState(0)
 
     const name = <span>{text}</span>;
 
