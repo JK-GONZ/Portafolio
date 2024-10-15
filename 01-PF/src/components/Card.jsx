@@ -2,9 +2,12 @@ import { useState } from 'react';
 
 import './Card.css'
 
-export function Card ({text, className}) {
+import { Content_Component } from './Content_Component';
 
-    const [page, setPage] = useState(0)
+
+export default function Card ({text, className}) {
+
+    const [page, setPage] = useState(1)
 
     const name = <span>{text}</span>;
 
@@ -26,6 +29,8 @@ export function Card ({text, className}) {
             <hr></hr>
             <p>Pagina seleccionada = {options[page]}</p>
             {name}
+
+            <Content_Component option={options[page]} options={options}/>
         </div>
     )
 
