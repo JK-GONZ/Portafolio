@@ -1,0 +1,25 @@
+{
+    "data": {
+        "profile": {
+            "name": "Jorge Enrique González Gonzalo",
+            "edad": "24",
+            "img_path": "/src/assets/JK_logo.png",
+
+            "links": [
+                {
+                    "name": "LinkedIn",
+                    "url": "https://es.linkedin.com/in/jorge-enrique-gonz%C3%A1lez-gonzalo",
+                    "logo_name": "linkedin",
+                    "logo_color": "0A66C2"
+                },
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/JK-GONZ",
+                    "logo_name": "github",
+                    "logo_color": "181717"
+                }
+            ]
+        }
+        
+    }
+}

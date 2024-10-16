@@ -1,4 +1,4 @@
-#container {
+.grid2 {
     border-radius: inherit;
     border: inherit;
     height: 95%;
@@ -13,7 +13,7 @@ nav {
 }
 
 
-ul{
+ul {
     display: flex;
     flex-direction: row;
     list-style: none;

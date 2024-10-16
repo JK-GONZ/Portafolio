@@ -4,31 +4,50 @@
  */
 import './ProfileCard.css'
 
+import { useEffect, useState } from 'react'
+
+
 import JK_logo from '../assets/JK_logo.png'
 
 import { ProfileCard_field } from './ProfileCard_field'
 
+// 
+export function ProfileCard({ className = "grid1" }) {
 
-/**
- * TODO: Campos para rellenar -> Componentes 
- */
+    const [data, setData] = useState(null)
 
-export function ProfileCard ({ className }) {
+    useEffect(() => {
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => setData(data))
+            .catch(error => console.error("Error fetching data:", error))
+    })
+
+    if (!data) {
+        return <div>Loading...</div>;
+    }
 
     return (
         <div id='container' className={className}>
-            <p>Profile Card</p>
+            <p>Profile Card 🧑 </p>
+        
             <div className="Profile_Img">
-                <img src={JK_logo} alt="Profile Image" />
+                <img src={data.data.profile.img_path} alt="Prueba data" />
             </div>
 
-            <ProfileCard_field name="github" logo_color="181717" link="https://github.com/JK-GONZ"/>
-            
-            <ProfileCard_field name="linkedin" logo_color="0A66C2" link="https://es.linkedin.com/in/jorge-enrique-gonz%C3%A1lez-gonzalo"/>
-            
-            
-
-
+            {
+                /**
+                 * * Actualización de forma dinamica en momento de carga de los enlaces 🙌
+                 */
+            }
+            {data.data.profile.links.map((option, index) =>
+                <ProfileCard_field
+                    name={option.logo_name}
+                    logo_color={option.logo_color}
+                    link={option.url}
+                    className={option.logo_name + " " + index}
+                />
+            )}
         </div>
     )
 

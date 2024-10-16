@@ -4,13 +4,13 @@ import { Card } from "./Card"
 import { ProfileCard } from "./ProfileCard"
 
 
-export function Container () {
+export function Container() {
 
     return (
         <>
             <div className="ContainerBlock">
-                <ProfileCard className="grid1"/>
-                <Card className="grid2" text={"isdjaoidasidj"}/>
+                <ProfileCard className="grid1" />
+                <Card className="grid2" text={"isdjaoidasidj"} />
             </div>
         </>
     )
