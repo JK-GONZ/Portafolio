@@ -1,39 +1,42 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import './Card.css'
+import "./Card.css";
 
-import { Content_Component } from './Content_Component';
+import { Content_Component } from "./Content_Component";
 
+export function Card({ className, datos }) {
+  const [page, setPage] = useState(0);
 
-export function Card({ text, className }) {
+  console.log("Card:");
+  console.log(datos.data.content);
 
-    const [page, setPage] = useState(1)
+  const options = ["About me", "Projects", "Tech Stack", "Contact"]; // ! AUTOMATIZAR
 
-    const name = <span>{text}</span>;
+  function handleClick(index) {
+    setPage(index);
+  }
 
-    const options = ["About me", "Projects", "Tech Stack", "Contact"]
+  /**
+   *
+   * TODO: Hacer rutas dinamicas con el array "options", para un futuro controlar todo solo con añadir o borrar cosas de una BD ❌  DEPRECATED
+   * ! Se ha cambiado a renderizado mendiante estados de la variable "page" que se modifica al pulsar los botones
+   */
 
-    function handleClick(index) {
-        setPage(index)
-    }
+  return (
+    <div className={className}>
+      <nav>
+        <ul>
+          {options.map((option, index) => (
+            <li key={option.toString()}>
+              <button onClick={() => handleClick(index)}>{option}</button>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <hr></hr>
+      <p>Pagina seleccionada = {options[page]}</p>
 
-    /**
-     * 
-     * TODO: Hacer rutas dinamicas con el array "options", para un futuro controlar todo solo con añadir o borrar cosas de una BD 
-     * ! Se ha cambiado a renderizado mendiante estados de la variable "page" que se modifica al pulsar los botones
-     */
-    
-    return (
-        <div className={className}>
-
-            <nav><ul>{options.map((option, index) => <li key={option.toString()} ><button onClick={() => handleClick(index)}>{option}</button></li>)}</ul></nav>
-            <hr></hr>
-            <p>Pagina seleccionada = {options[page]}</p>
-            {name}
-
-
-            <Content_Component option={options[page]} options={options} />
-        </div>
-    )
-
+      <Content_Component option={options[page]} options={options} />
+    </div>
+  );
 }

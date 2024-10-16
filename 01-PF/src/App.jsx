@@ -1,20 +1,15 @@
-import { useState } from 'react'
-import './App.css'
-import { Container } from './components/Container'
-
-
-
+import { useState } from "react";
+import "./App.css";
+import { Container } from "./components/Container";
 
 function App() {
-  //const [count, setCount] = useState(0)
-
   // Borrar <p> cuando el diseño esté definido
   return (
     <>
-      <p style={{display: 'block', position: 'absolute', top: 80}}>App</p>
-      <Container/>
+      <p style={{ display: "block", position: "absolute", top: 80 }}>App</p>
+      <Container />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
