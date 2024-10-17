@@ -8,3 +8,10 @@ createRoot(document.getElementById("root")).render(
     <App />
   </StrictMode>
 );
+
+/**
+ * TODO: LISTA DE COSAS QUE FALTAN POR HACER O POR MEJORAR
+ *      ! Hacer página responsive
+ *      ! Automatizar los campos del nav en relación con el .json ✅
+ *      ! Hacer página reutilizable para las opciones del nav
+ */

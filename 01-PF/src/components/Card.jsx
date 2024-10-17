@@ -8,19 +8,16 @@ export function Card({ className, datos }) {
   const [page, setPage] = useState(0);
 
   console.log("Card:");
-  console.log(datos.data.content);
+  console.log(datos.data);
 
-  const options = ["About me", "Projects", "Tech Stack", "Contact"]; // ! AUTOMATIZAR
+  let options = [];
+
+  datos.data.aside.map((option, index) => options.push(option.name));
+  console.log(options);
 
   function handleClick(index) {
     setPage(index);
   }
-
-  /**
-   *
-   * TODO: Hacer rutas dinamicas con el array "options", para un futuro controlar todo solo con añadir o borrar cosas de una BD ❌  DEPRECATED
-   * ! Se ha cambiado a renderizado mendiante estados de la variable "page" que se modifica al pulsar los botones
-   */
 
   return (
     <div className={className}>
