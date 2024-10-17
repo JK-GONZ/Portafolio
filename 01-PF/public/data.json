@@ -1,0 +1,109 @@
+{
+  "data": {
+    "profile": {
+      "name": "Jorge Enrique González Gonzalo",
+      "edad": "24",
+      "img_path": "/src/assets/JK_logo.png",
+      "links": [
+        {
+          "name": "LinkedIn",
+          "url": "https://es.linkedin.com/in/jorge-enrique-gonz%C3%A1lez-gonzalo",
+          "logo_name": "linkedin",
+          "logo_color": "0A66C2"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/JK-GONZ",
+          "logo_name": "github",
+          "logo_color": "181717"
+        }
+      ]
+    },
+    "aside": [
+      {
+        "id": "about_me",
+        "name": "About me",
+        "content": [
+          {
+            "text": "Prueba de texto para el about me",
+            "img": ""
+          }
+        ]
+      },
+      {
+        "id": "projects",
+        "name": "Projects",
+        "content": [
+          {
+            "name": "Proyecto 1",
+            "url": "/",
+            "date": "20/10/2024",
+            "tech-stack": [
+              {
+                "name": "LinkedIn",
+                "url": "https://es.linkedin.com/in/jorge-enrique-gonz%C3%A1lez-gonzalo",
+                "logo_name": "linkedin",
+                "logo_color": "0A66C2"
+              },
+              {
+                "name": "GitHub",
+                "url": "https://github.com/JK-GONZ",
+                "logo_name": "github",
+                "logo_color": "181717"
+              }
+            ]
+          },
+          {
+            "name": "Proyecto 2",
+            "url": "/",
+            "date": "06/1/2023",
+            "tech-stack": [
+              {
+                "name": "LinkedIn",
+                "url": "https://es.linkedin.com/in/jorge-enrique-gonz%C3%A1lez-gonzalo",
+                "logo_name": "linkedin",
+                "logo_color": "0A66C2"
+              },
+              {
+                "name": "GitHub",
+                "url": "https://github.com/JK-GONZ",
+                "logo_name": "github",
+                "logo_color": "181717"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tech_stack",
+        "name": "Tech Stack",
+        "content": [
+          {
+            "name": "Pandas",
+            "cod_logo": "pandas",
+            "color-logo": "",
+            "more-info": ""
+          },
+          {
+            "name": "Python",
+            "cod_logo": "python",
+            "color-logo": "",
+            "more-info": ""
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "name": "Contact",
+        "content": [
+          {
+            "telephone": "",
+            "email": "jorge100052@gmail.com",
+            "linkedin": "https://es.linkedin.com/in/jorge-enrique-gonz%C3%A1lez-gonzalo",
+            "Github": "https://github.com/JK-GONZ"
+          }
+        ]
+      }
+    ]
+  }
+}
