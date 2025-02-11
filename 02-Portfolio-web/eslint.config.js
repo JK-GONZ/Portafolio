@@ -9,13 +9,13 @@ export default [
     languageOptions: {
       globals: globals.browser,
       parserOptions: {
-        project: "./tsconfig.app.json",
+        project: "./tsconfig.json",
       },
     },
   },
   {
     rules: {
-      "react/react-in-jsx-scope": "off",
+      "plugins/react-in-jsx-scope": "warn",
       "react/jsx-filename-extension": [
         1,
         { extensions: [".js", ".jsx", ".ts", ".tsx"] },
@@ -23,6 +23,8 @@ export default [
     },
   },
   pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
   pluginReact.configs.flat.recommended,
+  
 ];
+

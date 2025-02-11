@@ -48,3 +48,12 @@ export default tseslint.config({
   },
 })
 ```
+
+
+
+
+
+## Instalation
+```bash
+npm install --legacy-peer-deps
+```
