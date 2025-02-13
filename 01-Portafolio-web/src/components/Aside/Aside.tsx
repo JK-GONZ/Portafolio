@@ -1,4 +1,4 @@
-import "@components/Aside/Aside.css"
+import "@components/Aside/Aside.css";
 
 export function Aside() {
   return (

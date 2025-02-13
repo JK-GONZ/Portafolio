@@ -4,20 +4,19 @@ header {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  font-size: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(106, 91, 72);
+  
+  
   display: flex;
   justify-content: space-around;
   text-align: center;
   align-items: center;
-  z-index: 10;
 }
 
 
 
 nav {
   display: flex;
-  justify-content: space-around;
-  width: 20%;
+  justify-content: space-between;
+  width: 22%;
+  padding: 10px;
 }

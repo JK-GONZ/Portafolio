@@ -1,32 +1,61 @@
 * {margin: 0; padding: 0;}
+
+
+:root {
+  --header-height: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :where(body) {
+    --background-color: #101820;
+    --primary-color: #375A7F;
+    --secundary-color: #F39C12;
+    --detail-color: #28DF99;
+    --text-color: #ECF0F1;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  :where(body) {
+    --background-color: #F7F9FC;
+    --primary-color: #0078D4;
+    --secundary-color: #FFD166;
+    --detail-color: #06D6A0;
+    --text-color: #264653;
+  }
+}
+
+
+
+
+
 body {
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--background-color);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   height: 100vh;
 }
 
 body>* {
   width: 100%;
-  border: 1px solid #000;
   border-bottom-width: 0;
   box-sizing: border-box;
   text-align: center;
 }
 
-body>*:last-child {
-  border-bottom-width: 1px;
-}
-
-header,
-footer {
-  min-height: 100px;
-}
 
 aside {
-  width: 25%;
-  border: 0 solid #000;
-  border-right-width: 1px;
+  min-width: 250px;
+    height: inherit;
+    position: sticky;
+    left: 2%;
+    border-radius: 25px;
+    border: 1px solid white;
 }
 
 .container .body {
@@ -35,5 +64,6 @@ aside {
 
 .container {
   display: flex;
+  justify-content: space-around;
   min-height: 300px;
 }

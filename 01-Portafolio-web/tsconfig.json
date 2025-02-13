@@ -27,8 +27,8 @@
     "outDir": "./out",
     "baseUrl": ".",
     "paths": {
+      "@app/*": ["src/components/App/*"],
       "@components/*": ["src/components/*"],
-      "@app/*": ["src/components/App/*"]
     }
     // "paths": {
     //     "@auth/*" : ["auth/*"],

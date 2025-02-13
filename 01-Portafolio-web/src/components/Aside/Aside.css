@@ -1,13 +1,5 @@
 aside {
-  width: 250px;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-right: 1px solid #e0e0e0;
-  height: 100dvh;
-  position: sticky;
-  left: 0;
-  top: 60px;
-  overflow-y: auto;
+  
 }
 
 aside::-webkit-scrollbar {
