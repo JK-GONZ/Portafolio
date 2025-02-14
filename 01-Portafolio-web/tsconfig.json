@@ -22,13 +22,14 @@
     "noFallthroughCasesInSwitch": true,
 
     "jsxImportSource": "react",
-
+    "resolveJsonModule": true,
     /* Paths */
     "outDir": "./out",
     "baseUrl": ".",
     "paths": {
       "@app/*": ["src/components/App/*"],
       "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"]
     }
     // "paths": {
     //     "@auth/*" : ["auth/*"],

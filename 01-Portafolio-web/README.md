@@ -49,7 +49,9 @@ export default tseslint.config({
 })
 ```
 
-
+```css
+#101820;
+```
 
 
 

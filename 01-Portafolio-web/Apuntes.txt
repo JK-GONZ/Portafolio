@@ -79,3 +79,25 @@ Regla del 60-30-10
 Primario -> 60%
 Secundario -> 30%
 Foco -> 10%
+
+
+
+
+
+
+
+TO-DO list:
+✅ Install Tailwindcss
+✅ Define color palette
+✅ Fix dependencies
+❌ Header
+❌ Aside
+❌ Main container
+
+
+
+
+
+
+
+

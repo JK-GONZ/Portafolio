@@ -1,15 +1,12 @@
 @import "tailwindcss";
 
-header {
+footer {
   position: sticky;
-  top: 0;
-  left: 0;
   width: 90%;
   height: var(--header-height);
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   align-items: center;
   border: 1px white inset;
