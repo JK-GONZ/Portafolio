@@ -4,17 +4,18 @@
 import Header from '@components/Header/Header.tsx';
 import Aside from '@components/Aside/Aside.tsx';
 import Footer from '@components/Footer/Footer.tsx';
-import '@app/App.css';
+import Nav from '@components/Nav/Nav.tsx';
 
 function App() {
   return (
-    <div id="App" className="flex h-full w-full flex-col items-center">
-      <Header />
+    <div className="flex h-full flex-col items-center">
+      {/* <Header /> */}
+      <Nav />
       {/* Section to display the aside in the success way */}
-      <section className="flex h-full justify-between gap-4">
+      <section className="mx-auto h-full max-w-7xl justify-between gap-6 px-2">
         <Aside />
         {/* <Content /> */}
-        <div className="rounded-2xl border-1 border-x-white">
+        <div className="w-full rounded-2xl border-1 border-x-white">
           Div del contenido <br />
           <br />
           <br />
