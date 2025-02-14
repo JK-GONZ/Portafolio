@@ -1,13 +1,13 @@
-import '@components/Header/Header.css';
+// import '@components/Header/Header.css';
 import data from '@assets/data.json' with { type: 'json' };
 
 function Header() {
   const information = data.Metadata;
   return (
-    <header>
-      <h1>{information.Title}</h1>
+    <header className="sticky mt-40 mb-20 flex h-(--header-height) w-9/10 flex-row items-center justify-between rounded-2xl border-1 border-x-white text-center text-2xl">
+      <h1 className='pl-4/100'>{information.Title}</h1>
 
-      <nav>
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <a href="">
           <ul>Home</ul>
         </a>

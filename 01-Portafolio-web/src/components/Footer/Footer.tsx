@@ -1,14 +1,11 @@
-import "@components/Footer/Footer.css"
+import '@components/Footer/Footer.css';
 
 export function Footer() {
   return (
-    <footer>
+    <footer className="text-2xl text-(--text-color)">
       <p>Footer de ejemplo</p>
     </footer>
-  )
+  );
 }
-
-
-
 
 export default Footer;

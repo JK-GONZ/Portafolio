@@ -6,16 +6,15 @@ import Aside from '@components/Aside/Aside.tsx';
 import Footer from '@components/Footer/Footer.tsx';
 import '@app/App.css';
 
-
 function App() {
   return (
-    <div id="App">
+    <div id="App" className="flex h-full w-full flex-col items-center">
       <Header />
       {/* Section to display the aside in the success way */}
-      <section className="container">
+      <section className="flex h-full justify-between gap-4">
         <Aside />
         {/* <Content /> */}
-        <div className="main">
+        <div className="rounded-2xl border-1 border-x-white">
           Div del contenido <br />
           <br />
           <br />
