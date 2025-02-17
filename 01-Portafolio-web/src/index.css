@@ -1,0 +1,30 @@
+/* ==================================================
+                        Imports
+================================================== */
+@import "tailwindcss";
+
+
+
+/* ==================================================
+                Styles per color scheme
+================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :where(body) {
+    --background-color: #101820;
+    --primary-color: #375A7F;
+    --secundary-color: #F39C12;
+    --detail-color: #28DF99;
+    --text-color: #ECF0F1;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :where(body) {
+    --background-color: #F7F9FC;
+    --primary-color: #0078D4;
+    --secundary-color: #FFD166;
+    --detail-color: #06D6A0;
+    --text-color: #264653;
+  }
+}

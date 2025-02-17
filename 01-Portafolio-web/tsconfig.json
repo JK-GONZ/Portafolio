@@ -1,0 +1,54 @@
+{
+  "include": ["./**/*"],
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "jsxImportSource": "react",
+    "resolveJsonModule": true,
+    /* Paths */
+    "outDir": "./out",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/components/App/*"],
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"]
+    }
+    // "paths": {
+    //     "@auth/*" : ["auth/*"],
+    //     "@controller/*": ["controller/*"],
+    //     "@database/*": ["database/*"],
+    //     "@models/*": ["models/*"],
+    //     "@router/*": ["router/*"],
+    //     "@enums/*": ["enums/*"],
+    //     "@utils/*": ["utils/*"],
+    //     "@middleware/*": ["middleware/*"],
+    //     "@queries": ["database/query.database"],
+    //     "@database": ["database/database"],
+    //     "@descendant": ["utils/descendant.utils"],
+    //     "@params": ["utils/params.utils"],
+    //     "@interfaces/*":["interfaces/*"],
+    //     "@config": ["config"],
+    //     "@enums":["enums/enums"],
+    //     "@app":["app"],
+    //     "domain/*": ["domain/*"]
+  }
+}
+
