@@ -13,7 +13,7 @@ function App() {
       <Nav />
       {/* Section to display the aside in the success way */}
       <section className="mx-auto h-full max-w-7xl justify-between gap-6 px-2">
-        <Aside />
+        {/* <Aside /> */}
         {/* <Content /> */}
         <div className="w-full rounded-2xl border-1 border-x-white">
           Div del contenido <br />
