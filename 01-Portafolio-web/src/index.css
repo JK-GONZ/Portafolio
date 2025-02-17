@@ -16,6 +16,7 @@
     --secundary-color: #F39C12;
     --detail-color: #28DF99;
     --text-color: #ECF0F1;
+    --shadow-img: 6px 6px 20px 1px var(--primary-color);
   }
 }
 
