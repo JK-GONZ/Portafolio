@@ -1,8 +1,8 @@
 // import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
-import Header from '@components/Header/Header.tsx';
-import Aside from '@components/Aside/Aside.tsx';
+// // import viteLogo from "/vite.svg";
+// import Header from '@components/Header/Header.tsx';
+// import Aside from '@components/Aside/Aside.tsx';
 import Footer from '@components/Footer/Footer.tsx';
 import Nav from '@components/Nav/Nav.tsx';
 
