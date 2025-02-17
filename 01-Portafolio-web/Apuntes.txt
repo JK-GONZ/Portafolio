@@ -92,10 +92,16 @@ TO-DO list:
 ✅ Define color palette
 ✅ Fix dependencies
 ✅ Variables de estilo
+❌ Router
+❌ useEffect
+❌ useState
+❌ Components
 ❌ Header
-❌ Aside
-❌ Main container
-
+❌ Nav
+❌ Content
+❌ Footer
+❌ DDBB  ?
+❌ Responsive
 
 
 

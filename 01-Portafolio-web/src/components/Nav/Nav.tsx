@@ -6,9 +6,9 @@ import {
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Inicio', href: '#', current: true },
+  { name: 'Inicio', href: '/home', current: true },
   { name: 'Proyectos', href: '#', current: false },
-  { name: 'Sobre mi', href: '#', current: false },
+  { name: 'Sobre mi', href: '/about', current: false },
   { name: 'Contacto', href: '#', current: false },
 ];
 
@@ -24,9 +24,11 @@ function classNames(...classes: string[]) {
 }
 
 function Nav() {
+
+
   return (
     <>
-      <Disclosure as="nav" className="w-full bg-(--background-color)">
+      <Disclosure as="nav" className="w-full">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -46,11 +48,14 @@ function Nav() {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex shrink-0 items-center">
-                <img
-                  alt="Your Company"
-                  src="https://raw.githubusercontent.com/JK-GONZ/JK-GONZ/main/source/JK_logo.png"
-                  className="h-8 w-auto rounded-full"
-                />
+                <a href="/">
+                  
+                  <img
+                    alt="Your Company"
+                    src="https://raw.githubusercontent.com/JK-GONZ/JK-GONZ/main/source/JK_logo.png"
+                    className="h-8 w-auto rounded-full"
+                  />
+                </a>
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
@@ -61,8 +66,8 @@ function Nav() {
                       aria-current={item.current ? 'page' : undefined}
                       className={classNames(
                         item.current
-                          ? 'bg-gray-900 text-white'
-                          : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          ? 'hover:--text-color bg-(--secundary-color) text-black hover:bg-(--primary-color)'
+                          : 'hover:--text-color text-gray-300 hover:bg-(--primary-color)',
                         'rounded-md px-3 py-2 text-sm font-medium',
                       )}
                     >
@@ -85,8 +90,8 @@ function Nav() {
                 aria-current={item.current ? 'page' : undefined}
                 className={classNames(
                   item.current
-                    ? 'bg-gray-900 text-white'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    ? 'bg-(--secundary-color) text-black hover:bg-(--primary-color) hover:text-white'
+                    : 'text-gray-300 hover:bg-(--primary-color) hover:text-white',
                   'block rounded-md px-3 py-2 text-base font-medium',
                 )}
               >
