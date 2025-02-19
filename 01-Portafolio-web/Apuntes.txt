@@ -82,6 +82,23 @@ Secundario -> 30%
 Foco -> 10%
 
 
+ICONS -> https://react-icons.github.io/react-icons/
+Style icons -> https://github.com/react-icons/react-icons#adjustment-css
+
+
+
+
+Componetizar -> 
+      <a href={information.Social.Linkedin}>
+        <IconContext.Provider
+          value={{ size: '2em', style: { color: 'var(--secundary-color)' } }}
+        >
+          <div>
+            <FaLinkedin />
+          </div>
+        </IconContext.Provider>
+      </a>
+
 
 
 

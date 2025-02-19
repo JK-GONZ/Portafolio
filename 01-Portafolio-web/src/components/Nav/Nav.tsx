@@ -4,12 +4,13 @@ import {
   DisclosurePanel,
 } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link, useLocation } from 'react-router-dom';
 
 const navigation = [
-  { name: 'Inicio', href: '/home', current: true },
-  { name: 'Proyectos', href: '#', current: false },
-  { name: 'Sobre mi', href: '/about', current: false },
-  { name: 'Contacto', href: '#', current: false },
+  { name: 'Home', href: '/', current: false },
+  { name: 'Projects', href: '/home', current: false },
+  { name: 'About me', href: '/about', current: false },
+  { name: 'Contact', href: '#', current: false },
 ];
 
 // const navigation = [
@@ -24,11 +25,18 @@ function classNames(...classes: string[]) {
 }
 
 export function Nav() {
+  let location = useLocation();
 
+  navigation.find((item) => {
+    if (item.href === location.pathname) {
+      item.current = true;
+    }
+  });
 
   return (
     <>
       <Disclosure as="nav" className="w-full">
+        
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -48,14 +56,13 @@ export function Nav() {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex shrink-0 items-center">
-                <a href="/">
-                  
+                <Link to="/">
                   <img
                     alt="Your Company"
                     src="https://raw.githubusercontent.com/JK-GONZ/JK-GONZ/main/source/JK_logo.png"
                     className="h-8 w-auto rounded-full"
                   />
-                </a>
+                </Link>
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
@@ -79,7 +86,6 @@ export function Nav() {
             </div>
           </div>
         </div>
-
         <DisclosurePanel className="sm:hidden">
           <div className="space-y-1 px-2 pt-2 pb-3">
             {navigation.map((item) => (
@@ -104,4 +110,3 @@ export function Nav() {
     </>
   );
 }
-

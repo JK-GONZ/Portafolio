@@ -4,15 +4,15 @@
 // import Header from '@components/Header/Header.tsx';
 // import Aside from '@components/Aside/Aside.tsx';
 import { Footer } from '@components/Footer/Footer.tsx';
-import {Nav} from '@components/Nav/Nav.tsx';
+import { Nav } from '@components/Nav/Nav.tsx';
 
 export function App() {
   return (
-    <div className="flex h-full flex-col items-center">
+    <div className="flex h-full lg:w-5xl flex-col items-center">
       {/* <Header /> */}
       <Nav />
       {/* Section to display the aside in the success way */}
-      <section className="mx-auto h-full max-w-7xl justify-between gap-6 px-2">
+      <section className="h-full justify-between gap-6 px-2">
         {/* <Aside /> */}
         {/* <Content /> */}
         <div className="w-full rounded-2xl border-1 border-x-white">
@@ -21,7 +21,7 @@ export function App() {
             // src="https://ca.slack-edge.com/T028W25JFK7-U07KBJ1NACW-d88cbb1d7ca2-512"
             className="float-left h-30 w-30 rounded-full shadow-(--shadow-img)"
           />
-          Div del contenido <br />
+          Hello world <br />
           <br />
           <br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa
