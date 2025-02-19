@@ -7,7 +7,7 @@ import { pagesData } from './pages/pagesData.tsx';
 import React from 'react';
 
 createRoot(document.getElementById('root')!).render(
-  <main className="m-0 flex h-dvh w-dvw flex-col items-center justify-center overflow-visible bg-(--background-color) p-0 text-center font-sans text-(--text-color)">
+  <main className="flex min-h-screen min-w-screen flex-col items-center overflow-visible bg-(--background-color) p-0 text-center font-sans text-(--text-color)">
     <Analytics /> <SpeedInsights />
     <React.StrictMode>
       <RouterProvider router={pagesData} />
