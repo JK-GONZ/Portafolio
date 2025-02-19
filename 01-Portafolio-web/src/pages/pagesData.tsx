@@ -1,9 +1,9 @@
-import App from '@app/App.tsx';
+import { App } from '@app/App.tsx';
 import { routerType } from '../types/router.types.tsx';
-import About from './About/index.tsx';
-import Home from './Home/index.tsx';
+import { About } from './About/index.tsx';
+import { Home } from './Home/index.tsx';
 
-const pagesData: routerType[] = [
+export const pagesData: routerType[] = [
   {
     path: '',
     element: <App />,
@@ -20,5 +20,3 @@ const pagesData: routerType[] = [
     title: 'about',
   },
 ];
-
-export default pagesData;
