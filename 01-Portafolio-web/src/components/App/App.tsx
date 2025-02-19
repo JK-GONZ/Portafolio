@@ -4,7 +4,7 @@
 // import Header from '@components/Header/Header.tsx';
 // import Aside from '@components/Aside/Aside.tsx';
 import { Footer } from '@components/Footer/Footer.tsx';
-import Nav from '@components/Nav/Nav.tsx';
+import {Nav} from '@components/Nav/Nav.tsx';
 
 export function App() {
   return (

@@ -92,7 +92,7 @@ TO-DO list:
 ✅ Define color palette
 ✅ Fix dependencies
 ✅ Variables de estilo
-❌ Router
+✅ Router
 ❌ useEffect
 ❌ useState
 ❌ Components
