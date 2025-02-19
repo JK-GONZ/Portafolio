@@ -1,24 +1,19 @@
-import App from '@app/App.tsx';
-import { routerType } from '../types/router.types.tsx';
-import About from './About/index.tsx';
-import Home from './Home/index.tsx';
+import { App } from '@app/App.tsx';
+import { About } from './About/index.tsx';
+import { Home } from './Home/index.tsx';
+import { createBrowserRouter } from 'react-router-dom';
 
-const pagesData: routerType[] = [
+export const pagesData = createBrowserRouter([
   {
     path: '',
     element: <App />,
-    title: 'about',
   },
   {
     path: 'home',
     element: <Home />,
-    title: 'home',
   },
   {
     path: 'about',
     element: <About />,
-    title: 'about',
   },
-];
-
-export default pagesData;
+]);

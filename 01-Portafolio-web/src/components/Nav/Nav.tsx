@@ -23,7 +23,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-function Nav() {
+export function Nav() {
 
 
   return (
@@ -105,4 +105,3 @@ function Nav() {
   );
 }
 
-export default Nav;
