@@ -1,5 +1,5 @@
 export interface routerType {
   title: string;
   path: string;
-  element: React.JSX.Element;
+  element: React.JSX.IntrinsicElements;
 }

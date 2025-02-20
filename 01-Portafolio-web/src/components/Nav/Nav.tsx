@@ -4,7 +4,7 @@ import {
   DisclosurePanel,
 } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
@@ -36,7 +36,6 @@ export function Nav() {
   return (
     <>
       <Disclosure as="nav" className="w-full">
-        
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -56,13 +55,13 @@ export function Nav() {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex shrink-0 items-center">
-                <Link to="/">
+                <a href={navigation[0].href}>
                   <img
                     alt="Your Company"
                     src="https://raw.githubusercontent.com/JK-GONZ/JK-GONZ/main/source/JK_logo.png"
                     className="h-8 w-auto rounded-full"
                   />
-                </Link>
+                </a>
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">

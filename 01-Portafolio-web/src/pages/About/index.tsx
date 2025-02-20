@@ -1,13 +1,12 @@
 import data from '@assets/data.json' with { type: 'json' };
-import { Nav } from '@components/Nav/Nav.tsx';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IconContext, IconType } from 'react-icons';
 
 const information = data.data.About_me;
+
 export function About() {
   return (
     <div className="flex h-full flex-col items-center lg:w-5xl">
-      <Nav />
       <p>{information.Name}</p>
       <p>{information.Education}</p>
       <p>{information.Profession}</p>
@@ -18,6 +17,7 @@ export function About() {
         color="var(--secundary-color)"
         url={information.Social.Linkedin}
       />
+
       <Icon
         icon={FaGithub}
         color="var(--secundary-color)"
