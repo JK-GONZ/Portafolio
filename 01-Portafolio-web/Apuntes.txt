@@ -1,161 +1,37 @@
-================= Dark themes =================
-
-
-1. Futurista Neon
-Fondo: #1A1A2E (gris azulado oscuro)
-Primario: #0F52BA (azul neón)
-Secundario: #FF6F61 (coral neón)
-Detalles: #28DF99 (verde neón)
-Texto: #F3F3F3 (blanco claro)
-
-
-2. Hacker Style
-Fondo: #0A0A0A (negro profundo)
-Primario: #00FF41 (verde terminal)
-Secundario: #202833 (gris azulado oscuro)
-Detalles: #FF5733 (naranja intenso)
-Texto: #C0C0C0 (gris claro)
-
-
-3. Cielo Nocturno
-Fondo: #101820 (negro azulado)
-Primario: #375A7F (azul acero)
-Secundario: #F39C12 (amarillo anaranjado)
-Detalles: #E74C3C (rojo intenso)
-Texto: #ECF0F1 (gris claro)
-
-
-================= Light themes =================
-
-
-1. Tecnologia minimalista
-Fondo: #FFFFFF (blanco)
-Primario: #0078D4 (azul brillante)
-Secundario: #E5E5E5 (gris claro)
-Detalles: #FF4081 (rosa vibrante)
-Texto: #2D2D2D (gris oscuro)
-
-
-2. Ciberespacio brillante
-Fondo: #F7F9FC (gris muy claro)
-Primario: #38B6FF (azul ciber)
-Secundario: #FFD700 (oro brillante)
-Detalles: #34D399 (verde neón)
-Texto: #1A202C (gris carbón)
-
-
-3. Retro gaming
-Fondo: #FAF3DD (beige suave)
-Primario: #EF476F (rojo cereza)
-Secundario: #FFD166 (amarillo pastel)
-Detalles: #06D6A0 (verde brillante)
-Texto: #264653 (azul petróleo oscuro)
-
-
-====================================================================
-====================================================================
-
-
-==== ELECCIÓN Light ====
-Fondo: #F7F9FC (gris muy claro)
-Primario: #0078D4 (azul brillante)
-Secundario: #FFD166 (amarillo pastel)
-Detalles: #06D6A0 (verde brillante)
-Texto: #264653 (azul petróleo oscuro)
-
-===================================================
-
-==== ELECCIÓN Dark ====
-Fondo: #101820 (negro azulado)
-Primario: #375A7F (azul acero)
-Secundario: #F39C12 (amarillo anaranjado)
-Detalles: #28DF99 (verde neón)
-Texto: #ECF0F1 (gris claro)
+ICONS -> https://react-icons.github.io/react-icons/
+Style icons -> https://github.com/react-icons/react-icons#adjustment-css
 
 
 ====================================================================
 
+====================================================================
 
-Regla del 60-30-10
-Primario -> 60%
-Secundario -> 30%
-Foco -> 10%
+Tema claro:
+====================================================================
+| Elemento                  | Color                  | Hex       |
+|---------------------------|------------------------|-----------|
+| Fondo principal           | Blanco suave           | #F9FAFB |
+| Texto principal           | Gris oscuro / negro    | #1F2937 |
+| Fondo de tarjetas         | Blanco                 | #FFFFFF |
+| Color de acento (botones) | Azul eléctrico suave   | #3B82F6 |
+| Texto secundario          | Gris medio             | #6B7280 |
+| Borde o sombra sutil      | Gris claro             | #E5E7EB |
+| Hover / resaltado         | Azul más intenso       | #2563EB |
 
+====================================================================
+====================================================================
 
+Tema oscuro:
+====================================================================
+| Elemento                  | Color                       | Hex       |
+|---------------------------|-----------------------------|-----------|
+| Fondo principal           | Gris muy oscuro / negro     | #0F172A |
+| Fondo de tarjetas         | Gris oscuro                 | #1E293B |
+| Texto principal           | Blanco suave                | #F1F5F9 |
+| Texto secundario          | Gris claro                  | #94A3B8 |
+| Color de acento (botones) | Verde azulado suave         | #22D3EE |
+| Hover / botón activo      | Cian más fuerte             | #06B6D4 |
+| Líneas/divisores          | Gris medio                  | #334155 |
 
-
-
-
-
-TO-DO list:
-✅ Install Tailwindcss
-✅ Define color palette
-✅ Fix dependencies
-✅ Variables de estilo
-✅ Router
-❌ useEffect
-❌ useState
-❌ Components
-❌ Header
-❌ Nav
-❌ Content
-❌ Footer
-❌ DDBB  ?
-❌ Responsive
-
-
-
-
-
-
-==============================================================================================================================================================================================================
-ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  ASSETS  
-==============================================================================================================================================================================================================
-
-
-
-
-
-{/* Profile dropdown */}
-<Menu as="div" className="relative ml-3">
-  <div>
-    <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
-      <span className="absolute -inset-1.5" />
-      <span className="sr-only">Open user menu</span>
-      <img
-        alt=""
-        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-        className="size-8 rounded-full"
-      />
-    </MenuButton>
-  </div>
-  <MenuItems
-    transition
-    className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
-  >
-    <MenuItem>
-      <a
-        href="#"
-        className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-      >
-        Your Profile
-      </a>
-    </MenuItem>
-    <MenuItem>
-      <a
-        href="#"
-        className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-      >
-        Settings
-      </a>
-    </MenuItem>
-    <MenuItem>
-      <a
-        href="#"
-        className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-      >
-        Sign out
-      </a>
-    </MenuItem>
-  </MenuItems>
-</Menu>
+====================================================================
+====================================================================
