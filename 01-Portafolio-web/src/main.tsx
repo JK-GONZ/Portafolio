@@ -1,14 +1,15 @@
-import { createRoot } from 'react-dom/client';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
-import { App } from '@app/App.tsx';
-
-
+import ReactDOM from 'react-dom/client';
+import App from './App.tsx';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 
-createRoot(document.getElementById('root')!).render(
-  <main className="flex h-full min-h-screen flex-col items-center overflow-visible bg-(--background-color) text-center font-sans text-(--text-color)">
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <main className="bg-[--background] text-(--foreground)">
     <Analytics /> <SpeedInsights />
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </main>,
 );
