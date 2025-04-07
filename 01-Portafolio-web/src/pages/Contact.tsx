@@ -23,7 +23,7 @@ export default function ContactForm() {
       />
       <button
         type="submit"
-        className="bg-accent hover:bg-accent-hover text-(foreground) rounded-xl px-6 py-2 transition-colors duration-300"
+        className="bg-accent hover:bg-accent-hover rounded-xl px-6 py-2 text-(--input) transition-colors duration-300"
         disabled
       >
         Work in progress...

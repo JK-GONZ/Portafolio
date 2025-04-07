@@ -21,7 +21,7 @@ const ThemeToggle = () => {
       >
         {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
         <span className="inline-block min-w-[6rem] text-center">
-          Modo {theme === 'light' ? 'oscuro' : 'claro'}
+          {theme === 'light' ? 'Dark' : 'Light'} Mode
         </span>
       </button>
     </div>
