@@ -3,7 +3,7 @@ import ThemeToggle from './ThemeToggle.tsx';
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-around bg-[--background] py-4 shadow-md">
+    <header className="flex items-center justify-around bg-[--background] py-2 shadow-md">
       <h1>
         <Link to="/" className="hover:text-accent text-2xl font-bold">
           <img src="https://github.com/JK-GONZ.png" className='w-12 rounded-4xl'/>

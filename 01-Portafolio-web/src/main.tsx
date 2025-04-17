@@ -1,16 +1,16 @@
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css';
-
+import Header from './components/Header.tsx';
+import Footer from './components/Footer.tsx';
+import '../src/styles/global.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <main className="bg-[--background] text-(--foreground)">
-    <Analytics /> <SpeedInsights />
-    <BrowserRouter>
+  <BrowserRouter>
+    <Header />
+    <section className="mx-auto max-w-7/8 flex-1 justify-center py-8 md:px-12">
       <App />
-    </BrowserRouter>
-  </main>,
+    </section>
+    <Footer />
+  </BrowserRouter>,
 );
