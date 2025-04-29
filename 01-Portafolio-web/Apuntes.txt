@@ -35,3 +35,78 @@ Tema oscuro:
 
 ====================================================================
 ====================================================================
+
+
+Estructura nueva para implementar frontend y backend:
+
+mi-proyecto/
+│
+├── frontend/                        # Aplicación React
+│   ├── public/                      # Archivos públicos (favicon, index.html)
+│   ├── src/                         # Código fuente
+│   │   ├── assets/                  # Imágenes, fuentes, estilos globales
+│   │   ├── components/              # Componentes reutilizables
+│   │   │   └── Navbar.tsx
+│   │   ├── pages/                   # Vistas principales
+│   │   │   ├── Home.tsx
+│   │   │   ├── Login.tsx
+│   │   │   └── UserProfile.tsx
+│   │   ├── routes/                  # Definición de rutas
+│   │   │   └── AppRoutes.tsx
+│   │   ├── services/                # Conexión con el backend, llamadas a la API (axios, fetch)
+│   │   │   └── userService.ts
+│   │   ├── context/                 # Contexto global (Auth, Theme, etc.)
+│   │   │   └── AuthContext.tsx
+│   │   ├── hooks/                   # Custom hooks
+│   │   │   └── useAuth.ts
+│   │   ├── App.tsx                  # Componente raíz
+│   │   └── main.tsx                 # Entrada principal
+│   ├── .env                         # Variables de entorno
+│   ├── tsconfig.json              # Configuración de TypeScript
+│   ├── vite.config.ts               # Configuración de Vite
+│   └── package.json                 # Dependencias y scripts
+│
+├── backend/                         # Aplicación NestJS
+│   ├── src/
+│   │   ├── main.ts                  # Punto de entrada
+│   │   ├── app.module.ts            # Módulo raíz
+│   │   ├── common/                  # Pipes, guards, filtros, constantes comunes
+│   │   │   ├── guards/              # AuthGuard, RolesGuard, etc.
+│   │   │   └── filters/             # HttpExceptionFilter, etc.
+│   │   ├── config/                  # Configuraciones (env, db)
+│   │   │   └── config.module.ts
+│   │   ├── modules/                 # Módulos de dominio (ej. users, auth)
+│   │   │   ├── auth/
+│   │   │   │   ├── auth.controller.ts  // Define rutas como /auth/login
+│   │   │   │   ├── auth.service.ts
+│   │   │   │   ├── auth.module.ts
+│   │   │   │   └── jwt.strategy.ts
+│   │   │   ├── users/
+│   │   │   │   ├── users.controller.ts
+│   │   │   │   ├── users.service.ts
+│   │   │   │   ├── users.module.ts
+│   │   │   │   └── dto/
+│   │   │   │       ├── create-user.dto.ts
+│   │   │   │       └── update-user.dto.ts
+│   │   │   └── posts/
+│   │   │       ├── posts.controller.ts
+│   │   │       ├── posts.service.ts
+│   │   │       └── posts.module.ts
+│   │   └── shared/                  # Interfaces o clases compartidas
+│   │       └── interfaces/
+│   ├── .env                       # Variables de entorno
+│   ├── nest-cli.json              # Configuración del CLI de Nest
+│   ├── tsconfig.build.json
+│   ├── tsconfig.json
+│   └── package.json               # Dependencias de NestJS
+│
+├── shared/                          # Archivos compartidos entre frontend y backend (opcional)
+│   └── types/
+│       └── user.interface.ts
+│
+├── scripts/                         # Scripts útiles (deploy, reset-db, etc.)
+│   └── reset-db.sh
+│
+├── docker-compose.yml               # Contenedores para frontend, backend, base de datos (Opcional)
+├── .gitignore
+└── README.md
